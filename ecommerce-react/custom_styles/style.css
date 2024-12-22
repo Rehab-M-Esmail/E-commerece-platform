@@ -1,0 +1,24 @@
+/* custom.css */
+.btn-primary {
+    background-color: #8c7851 !important; 
+    border-color: #8c7851 !important; 
+    color: white !important;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f25042 !important; 
+    border-color: #f25042 !important; 
+  }
+
+.text-h1{
+    color: #020826 !important;
+    font-size: large !important;
+}
+.text-th{
+    color: #020826;
+    font-size: medium;
+}
+.text-td{
+    color: black;
+    font-size: small;
+}
