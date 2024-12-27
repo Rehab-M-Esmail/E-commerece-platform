@@ -6,6 +6,7 @@ import Confirmation from './Components/Confirmation'
 import Login from './Components/Login'
 import Product from './Components/Product'
 import ProductsList from './Components/ProductsList'
+import SellerProfile from './Components/SellerProfile'
 function App() {
 
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <Login/> */}
       {/* <Confirmation/> */}
       {/* <Product/> */}
-      <ProductsList/>
+      {/* <ProductsList/> */}
+      <SellerProfile sellerId="123" />
     </>
   )
 }
