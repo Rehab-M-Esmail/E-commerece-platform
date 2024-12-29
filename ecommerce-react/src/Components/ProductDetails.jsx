@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
-//import useParams from 'react-router-dom'
 import { useParams, useNavigate } from 'react-router-dom';
 import '/Users/rehabmahmoud/E-commerece-platform/ecommerce-react/src/ProductDetails.css'
 function ProductDetails()
 {
-    //const {productID} = useParams();
+    const {productID} = useParams();
     //console.log(productID);
     const [productData,setProductData]= useState('');
     const navigate = useNavigate();
@@ -12,7 +11,7 @@ function ProductDetails()
     navigate('/SellerProfile');
   };
     useEffect(() => {
-        fetch(`https://fakestoreapi.com/products/1`)
+        fetch(`https://fakestoreapi.com/products/${productID}`)
             .then(res=>res.json())
             .then(data => setProductData(data))
     }, []); 
