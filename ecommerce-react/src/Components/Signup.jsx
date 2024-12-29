@@ -4,7 +4,8 @@ import user_icon from "../assets/user.png";
 import mail_icon from "../assets/mail.png";
 import password_icon from "../assets/locked-computer.png";
 import birthday_icon from "../assets/birthday-cake.png";
-
+import '../Components/Signup.css'
+import {useNavigate } from "react-router-dom";
 const Signup = () => {
   const [values, setValues] = useState({
     username: "",
@@ -15,6 +16,8 @@ const Signup = () => {
   });
   
   const [passwordMatchError, setPasswordMatchError] = useState(false);
+  const navigate = useNavigate();
+  
 
   const inputs = [
     {
@@ -71,6 +74,7 @@ const Signup = () => {
     e.preventDefault();
     if (values.password !== values.confirmpassword) {
       setPasswordMatchError(true);
+      navigate(`/products`);
     } else {
       setPasswordMatchError(false);
       console.log(values);
