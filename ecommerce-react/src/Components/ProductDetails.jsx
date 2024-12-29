@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 //import useParams from 'react-router-dom'
-import { useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import '/Users/rehabmahmoud/E-commerece-platform/ecommerce-react/src/ProductDetails.css'
 function ProductDetails()
 {
