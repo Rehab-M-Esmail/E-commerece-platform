@@ -1,0 +1,39 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 800px;
+    background: #eaddcf;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.card-body {
+    font-size: 1.1rem;
+}
+
+.card-footer button {
+    width: 100%;
+}

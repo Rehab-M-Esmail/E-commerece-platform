@@ -7,11 +7,12 @@ export default function Confirmation() {
     <>
     <div className='mb-4'>
     <i className="fa-solid fa-credit-card"></i>    
-    <h6 className='text-h1'>Payment Completed</h6>
+    <h6 className='h1'>Payment Completed</h6>
     </div>
-    <div className="mb-4 p-3 rounded border">
-  <h6 className="mb-3">Transaction details</h6>
-  <table className="table table-borderless">
+    <div className="mb-4 p-3 rounded">
+      <div className='card'>
+  <h5 className="mb-3">Transaction details</h5>
+  <table className=" table table-borderless">
     <tbody>
       <tr>
         <th scope="row" className="text-muted text-th">Date</th>
@@ -31,6 +32,7 @@ export default function Confirmation() {
       </tr>
     </tbody>
   </table>
+</div>
 </div>
 <button className='btn btn-primary'>Confirm</button>
     </>
