@@ -11,7 +11,7 @@ export default function Confirmation() {
     </div>
     <div className="mb-4 p-3 rounded">
       <div className='card'>
-  <h5 className="mb-3">Transaction details</h5>
+  <h4 className="mb-3">Transaction details</h4>
   <table className=" table table-borderless">
     <tbody>
       <tr>
