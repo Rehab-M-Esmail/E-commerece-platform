@@ -52,7 +52,7 @@
     rgba(237, 231, 231, 0.3)
   ),
   url("https://images.stockcake.com/public/2/e/a/2ea4afd6-7f13-4fb3-9fa3-93f6286ea6a3_large/elegant-abstract-wallpaper-stockcake.jpg") ; 
-  background-size: 100% 100%; 
+  background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -65,24 +65,25 @@ form {
  width: 100%; 
  max-width: 400px;
  margin:  20px; 
+ align-items: center;
 }
 
 h1 {
- color: #716040;
+ color: #724c07;
  text-align: center;
 }
 
 button {
-   width: 100%;
+   width: 30%;
    height: 50px;
-   padding: 10px;
+   padding: 10px 20px;
    border: none;
    background-color: #8c7851;
    color: beige;   
    border-radius: 5px;
    font-weight: bold;
-   font-size: 18px;
+   font-size: 13px;
    cursor: pointer;
    margin-top: 15px;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
 } 

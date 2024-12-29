@@ -1,7 +1,7 @@
 .FormInput {
     display: flex;
     flex-direction: column;
-    width: 390px;  
+    width: 300px;  
 }
 .inputWithIcon {
     display: flex;
