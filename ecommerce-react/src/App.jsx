@@ -6,9 +6,11 @@ import ProductsList from './Components/ProductsList'
 import SellerProfile from './Components/SellerProfile'
 import { BrowserRouter ,Routes,Route } from 'react-router-dom'
 import ProductDetails from './Components/ProductDetails'
+import Signup from './components/Signup'
+
 
 function App() {
-
+  
   return (
    <>
     <BrowserRouter>
@@ -16,6 +18,7 @@ function App() {
         <Route path="/" element={<ProductsList />} />
         <Route path="/product/:productID" element={<ProductDetails />} />
         <Route path="/login" element={<Login/>}></Route>
+        <Route path="/signup" element={<Signup/>}></Route>
         <Route path='checkout' element={<Confirmation/>}></Route>
         <Route path='seller' element={<SellerProfile/>}></Route>
       </Routes>
@@ -24,4 +27,5 @@ function App() {
     
   )
 }
+
 export default App
