@@ -7,6 +7,8 @@ import SellerProfile from './Components/SellerProfile'
 import { BrowserRouter ,Routes,Route } from 'react-router-dom'
 import ProductDetails from './Components/ProductDetails'
 import Signup from './components/Signup'
+import ContactUs from './components/ContactUs'
+
 
 
 function App() {
@@ -22,6 +24,9 @@ function App() {
         <Route path="/signup" element={<Signup/>}></Route>
         <Route path='checkout' element={<Confirmation/>}></Route>
         <Route path='seller' element={<SellerProfile/>}></Route>
+        <Route path="/signup" element={<Signup/>}></Route>
+        <Route path="/contactus" element={<ContactUs/>}></Route>
+
       </Routes>
     </BrowserRouter>
   </>
