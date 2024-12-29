@@ -1,50 +1,75 @@
-.nav {
-    background: #716040;
-    padding: 15px 0;
+.nav-custom {
+  background: linear-gradient(90deg, #716040, #a6937c);
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.3s;
+}
+
+.nav-logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-items ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-items a {
+  color: #eae5e5;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-items a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.contact-btn {
+  background: #2972e7;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white !important;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-btn:hover {
+  background: #4a90e2;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
   }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
+
   .nav-items ul {
-    display: flex;
-    list-style: none;
-    gap: 50px;
-    margin: 0;
-    padding: 0;
-    align-items: center; 
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
   }
-  
-  .nav-items a {
-    color: #eae5e5;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s;
-  }
-  
-  .nav-items a:hover {
-    color: white;
-  }
-  
-  .contact-btn {
-    background: #2972e7;
-    padding: 8px 16px;
-    border-radius: 4px;
-    color: white !important;
-  }
-  
-  .contact-btn:hover {
-    background: #7d8d96;
-  }
+}

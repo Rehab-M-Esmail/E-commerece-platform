@@ -1,20 +1,11 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f9fa;
-}
-
-.container {
+/* Apply styles specifically to the profile-card component */
+.profile-card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh; /* Make the container fill the viewport */
+    background-color: #f8f9fa; /* Neutral background specific to this section */
 }
 
 .profile-card {
@@ -26,14 +17,40 @@ html {
     overflow: hidden;
 }
 
-.card-header {
+.profile-card .card-header {
     font-weight: bold;
+    background: #c8b59f; /* Subtle background for header */
+    color: #333;
+    padding: 16px;
+    text-align: center;
 }
 
-.card-body {
-    font-size: 1.1rem;
+.profile-card .card-body {
+    font-size: 1rem;
+    color: #4a4a4a;
+    padding: 16px;
+    line-height: 1.5;
 }
 
-.card-footer button {
-    width: 100%;
+.profile-card .card-footer {
+    padding: 16px;
+    background: #f3ece3;
+    text-align: center;
+}
+
+.profile-card .card-footer button {
+    width: auto;
+    padding: 10px 20px;
+    background: #2972e7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.profile-card .card-footer button:hover {
+    background: #4a90e2;
 }

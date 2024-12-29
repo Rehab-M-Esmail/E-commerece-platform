@@ -1,7 +1,7 @@
 
 import  { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '/Users/rehabmahmoud/E-commerece-platform/ecommerce-react/src/UserProfile.css'; 
+import '../../src/UserProfile.css'; 
 import { FaEdit } from 'react-icons/fa'; 
 
 const UserProfile = () => {
@@ -9,7 +9,6 @@ const UserProfile = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch user data
     fetch('https://fakestoreapi.com/users/1')
       .then((res) => res.json())
       .then((json) => {
