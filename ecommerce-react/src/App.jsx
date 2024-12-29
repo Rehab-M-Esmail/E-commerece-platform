@@ -1,4 +1,3 @@
-
 import './App.css'
 import Confirmation from './Components/Confirmation' 
 import Login from './Components/Login'
@@ -7,10 +6,11 @@ import ProductsList from './Components/ProductsList'
 import SellerProfile from './Components/SellerProfile'
 import { BrowserRouter ,Routes,Route } from 'react-router-dom'
 import ProductDetails from './Components/ProductDetails'
+
 function App() {
 
   return (
-    <>
+   <>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<ProductsList />} />
@@ -20,7 +20,8 @@ function App() {
         <Route path='seller' element={<SellerProfile/>}></Route>
       </Routes>
     </BrowserRouter>
-    </>
+  </>
+    
   )
 }
 export default App

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import '/Users/rehabmahmoud/E-commerece-platform/ecommerce-react/src/ProductDetails.css'
+// import '../ProductDetails.css'
 function ProductDetails()
 {
     const {productID} = useParams();
@@ -8,7 +8,7 @@ function ProductDetails()
     const [productData,setProductData]= useState('');
     const navigate = useNavigate();
     const goToSellerProfile = () => {
-    navigate('/SellerProfile');
+    navigate('/seller');
   };
     useEffect(() => {
         fetch(`https://fakestoreapi.com/products/${productID}`)
