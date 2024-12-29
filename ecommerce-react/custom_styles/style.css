@@ -1,4 +1,8 @@
 /* custom.css */
+body{
+  background-color: #f9f4ef !important;
+  color: #020826 !important;
+}
 .btn-primary {
     background-color: #8c7851 !important; 
     border-color: #8c7851 !important; 
@@ -15,11 +19,31 @@
     font-size: large !important;
 }
 .text-th{
-    color: #020826;
+    color: #716040  !important;
     font-size: medium;
+    background-color: #eaddcf !important;
+    text-align: left !important;
 }
 .text-td{
-    color: black;
+    color: #716040 !important;
     font-size: small;
+    background-color: #eaddcf !important;
+    text-align: left !important;
+}
+.card {
+  background-color: #eaddcf !important;
+}
+.card-body{
+background-color: #eaddcf !important;
+}
+.table-borderless{
+  background-color: #eaddcf !important;
+}
+.card h5,p,h1{
+  color: #020826 !important;
+}
+.table th, .table td {
+  padding: 0.5rem !important; /* Adjust to your preferred padding */
+  margin: 0 !important; /* Ensure there's no margin around table cells */
 }
 
