@@ -10,7 +10,7 @@ function ProductDetails()
     const navigate = useNavigate();
     const goToSellerProfile = () => {
     navigate('/SellerProfile');
-  };
+};
     useEffect(() => {
         fetch(`https://fakestoreapi.com/products/1`)
             .then(res=>res.json())
