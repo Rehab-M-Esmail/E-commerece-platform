@@ -127,7 +127,7 @@ function App() {
         {/* <Confirmation/> */}
         {/* <Product/> */}
         {/* <ProductsList/> */}
-        <SellerProfile sellerId="123" />
+        {/* <SellerProfile sellerId="123" /> */}
       </div>
     </>
   )
