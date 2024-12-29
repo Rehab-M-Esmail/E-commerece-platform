@@ -5,21 +5,22 @@ function ProductDetails()
     const {productID} = useParams();
     console.log(productID);
     const [productData,setProductData]= useState('');
-    const FetchProductData =()=>{
-        fetch('https://fakestoreapi.com/products/1')
+    useEffect(() => {
+        fetch(`https://fakestoreapi.com/products/${productID}`)
             .then(res=>res.json())
             .then(data => setProductData(data))
-    }
-    useEffect(()=>{
-            FetchProductData();
-        },[productID])
+    }, []); 
     return(
-  <div>
+    <div>
     <h1>Product Details</h1>
-      <h2>{productData.name}</h2>
-      <p>{productData.description}</p>
-      <p>Price: ${productData.price}</p>
-  </div>
+    <img src={productData.image}/>
+    <h4>{productData.category}</h4>
+    <h2>{productData.title}</h2>
+    <p>{productData.description}</p>
+    <p>Price: ${productData.price}</p>
+
+
+    </div>
     )
 }
 export default ProductDetails
