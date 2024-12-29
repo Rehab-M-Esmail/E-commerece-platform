@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-// import '../ProductDetails.css'
 function ProductDetails()
 {
     const {productID} = useParams();

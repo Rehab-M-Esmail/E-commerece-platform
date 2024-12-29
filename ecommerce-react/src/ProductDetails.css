@@ -1,5 +1,5 @@
 /* ProductDetails.css */
-.container {
+.product-container {
     max-width: 600px;
     margin: 2rem auto;
     padding: 20px;
@@ -14,7 +14,7 @@ h1 {
     color: #020826;
 }
 
-.img-container {
+.profile-img-container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;

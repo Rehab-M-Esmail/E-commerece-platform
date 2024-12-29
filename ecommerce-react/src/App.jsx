@@ -10,6 +10,7 @@ import Signup from './components/Signup'
 import Nav from './Components/Nav'
 import UserProfile from './Components/UserProfile'
 import { Profiler } from 'react'
+import ContactUs from './components/ContactUs'
 
 function App() {
   
@@ -23,9 +24,11 @@ function App() {
         <Route path="/product/:productID" element={<ProductDetails />} />
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/signup" element={<Signup/>}></Route>
-        <Route path='checkout' element={<Confirmation/>}></Route>
-        <Route path='seller' element={<SellerProfile/>}></Route>
-        <Route path='profile' element={<UserProfile/>}/>
+        <Route path='/checkout' element={<Confirmation/>}></Route>
+        <Route path='/seller' element={<SellerProfile/>}></Route>
+        <Route path='/contact' element={<ContactUs/>}></Route>
+        <Route path='/profile' element={<UserProfile/>}></Route>
+        
       </Routes>
     </BrowserRouter>
   </>
