@@ -7,15 +7,18 @@ import Login from './Components/Login'
 import Product from './Components/Product'
 import ProductsList from './Components/ProductsList'
 import SellerProfile from './Components/SellerProfile'
+import { BrowserRouter ,Routes,Route } from 'react-router-dom'
+import ProductDetails from './Components/ProductDetails'
 function App() {
 
   return (
     <>
-      {/* <Login/> */}
-      {/* <Confirmation/> */}
-      {/* <Product/> */}
-      {/* <ProductsList/> */}
-      <SellerProfile sellerId="123" />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ProductsList />} />
+        <Route path="/product/:productID" element={<ProductDetails />} />
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
