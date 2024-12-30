@@ -14,17 +14,26 @@ const Navbar = () => {
               <a href="/about">About</a>
             </li>
             <li>
-              <a href="/profile">Profile</a>
+              <a href="/cart">Cart</a>
             </li>
             <li>
-              <a href="/cart">Cart</a>
+              <a href="/login" >
+                Login
+              </a>
+            </li>
+            <li>
+              <a href="/signup" >
+                sign up
+              </a>
             </li>
             <li>
               <a href="/contact" className="contact-btn">
                 Contact Us
               </a>
             </li>
-            
+            <li>
+              <a href="/profile">Profile</a>
+            </li>
           </ul>
         </div>
       </div>

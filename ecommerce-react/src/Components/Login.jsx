@@ -1,53 +1,73 @@
-//import React from 'react'
-import { useState } from "react";
-//import { useNavigate } from "react-router-dom";
+import  { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "../../custom_styles/login.css";
+
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-function Login()
-{
-    
+
+function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [result, setResult] = useState("");
+    const [error, setError] = useState(null);
+    const [success, setSuccess] = useState(false);
 
-    //const Navigate = useNavigate();
-    const checkinputs = (e) => {
-    e.preventDefault(); //stop the page from refreshing
+    const navigate = useNavigate();
 
-        //var temp=true; //replaces database response
+    const handleLogin = (e) => {
+        e.preventDefault();
+
         const isUsernameValid = USER_REGEX.test(username);
         const isPasswordValid = PWD_REGEX.test(password);
-        if(isUsernameValid &&isPasswordValid){
-            setResult("done");
-           //Navigate('/'); //Navigate to home page after validation with database
+
+        if (!isUsernameValid) {
+            setError("Invalid username. Must be 4-24 characters, start with a letter, and only contain letters, numbers, or underscores.");
+            return;
         }
-    else
-    {
-        setResult("In valid inputs, please enter your username and password again");
-    }
-    }
-return (
-    <div className='LoginForm'>
-        <h1>Log in</h1>
-        <form className='form' onSubmit={checkinputs}>
-        <input type='text'
-        name="userName"
-        placeholder='username'
-        className="form-control" 
-        value={username}
-        onChange={(e) => setUsername(e.target.value)} />
-        <input type='password' 
-        name="password" 
-        placeholder='password' 
-        className="form-control" 
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}/>
-        <button type="submit">Submit </button>
-        </form>
-        <div>
-            <p>{result}</p>
+
+        if (!isPasswordValid) {
+            setError("Invalid password. Must be 8-24 characters, include uppercase, lowercase, number, and special character.");
+            return;
+        }
+
+        setError(null);
+        setSuccess(true);
+
+        // Simulate successful login
+        setTimeout(() => {
+            navigate("/products"); // Navigate to home page after successful login
+        }, 1000);
+    };
+
+    return (
+        <div className="login-page">
+            <div className="login-container">
+                <h1>Login</h1>
+                <form onSubmit={handleLogin}>
+                    <label htmlFor="username">Username</label>
+                    <input
+                        id="username"
+                        type="text"
+                        placeholder="Enter your username"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        required
+                    />
+                    <label htmlFor="password">Password</label>
+                    <input
+                        id="password"
+                        type="password"
+                        placeholder="Enter your password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                    />
+                    {error && <p className="error-message">{error}</p>}
+                    {success && <p className="success-message">Login successful! Redirecting...</p>}
+                    <button type="submit" className="login-button">Login</button>
+                </form>
+            </div>
         </div>
-    </div>
-)
+    );
 }
+
 export default Login;

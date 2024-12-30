@@ -1,4 +1,4 @@
-import { aboutCardsInfo } from "src/Data/staticData";
+import { aboutCardsInfo } from "../../../Data/staticData";
 import InfoCard from "../../Shared/MiniComponents/InfoCard/InfoCard";
 import s from "./AboutInfoCards.module.scss";
 

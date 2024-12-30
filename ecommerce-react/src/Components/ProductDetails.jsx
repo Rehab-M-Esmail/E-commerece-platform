@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../../custom_styles/ProductDetails.css';
 import { useParams, useNavigate } from 'react-router-dom';
+import Cart from './Cart/Cart';
 
 function ProductDetails() {
     const { productID } = useParams();
@@ -9,6 +10,10 @@ function ProductDetails() {
 
     const goToSellerProfile = () => {
         navigate('/SellerProfile');
+    };
+    
+        const handleAddToCart = () => {
+        <Cart Id={productID}/>
     };
 
     useEffect(() => {
@@ -28,6 +33,7 @@ function ProductDetails() {
                 <h2>{productData.title}</h2>
                 <p>{productData.description}</p>
                 <p className="price">Price: ${productData.price}</p>
+                <button onClick={handleAddToCart}>Add to Cart</button>
                 <button onClick={goToSellerProfile}>Go to Seller Profile</button>
             </div>
         </div>
