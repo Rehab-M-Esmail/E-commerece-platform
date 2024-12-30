@@ -1,0 +1,51 @@
+/* custom.css */
+.btn-primary {
+    background-color: #8c7851 !important; 
+    border-color: #8c7851 !important; 
+    color: white !important;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f25042 !important; 
+    border-color: #f25042 !important; 
+  }
+
+.text-h1{
+    color: #020826 !important;
+    font-size: large !important;
+}
+.text-th{
+    color: #716040  !important;
+    font-size: medium;
+    background-color: #eaddcf !important;
+    text-align: left !important;
+}
+.text-td{
+    color: #716040 !important;
+    font-size: small;
+    background-color: #eaddcf !important;
+    text-align: left !important;
+}
+.card {
+  background-color: #eaddcf !important;
+}
+.card-body{
+background-color: #eaddcf !important;
+}
+.table-borderless{
+  background-color: #eaddcf !important;
+}
+.card h5,h4,p,h1{
+  color: #020826 !important;
+}
+.table th, .table td {
+  padding: 0.5rem !important; /* Adjust to your preferred padding */
+  margin: 0 !important; /* Ensure there's no margin around table cells */
+}
+
+.card-header{
+  background-color: #716040 !important;
+}
+.card-text{
+  color: #716040 !important;
+}
