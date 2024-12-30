@@ -4,12 +4,21 @@
 
 
 ## Installation
+### Prerequisites
+- Node.js installed on your machine.
+- A package manager like `npm` or `yarn`.
 ```
 * npm install react-router-dom
 * npm install react-icons
 * npm install prop-types
 * npm install react-bootstrap bootstrap
 ```
+
+## **Technologies Used**
+- **React**: For building the user interface.
+- **React Router**: For navigation and routing.
+- **CSS**: For styling and responsive design.
+- **FakeStoreAPI**: To fetch product data.
 
 ## Used APIs:
 * https://fakestoreapi.com/products : used for getting products info
