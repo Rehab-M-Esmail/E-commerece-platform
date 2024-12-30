@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
-export default function Product(props) {
+export default function Product() {
     return (
       <div className="card" style={{ width: "18rem" }}>
         <img src='' className="card-img-top" alt="..." />
