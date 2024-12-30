@@ -23,7 +23,7 @@ export default function ProductsList() {
 
   if (loading) {
     return (
-      <div className="container text-center py-5">
+      <div className="container text-center py-5 ">
         <div className="spinner-border text-primary" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
@@ -42,7 +42,7 @@ export default function ProductsList() {
   }
 
   return (
-    <div className="container py-5">
+    <div className="container py-5 ">
       <h2 className="mb-4">Products</h2>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4">
         {products.map((product) => (

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import '../../custom_styles/style.css'
+
 export default function SellerProfile() {
     const [seller, setSeller] = useState(null);
     const [comments, setComments] = useState([]);
@@ -77,7 +78,6 @@ export default function SellerProfile() {
   
     return (
       <div className="container py-5">
-        {/* Seller Profile */}
         <div className="card mb-4 shadow-sm">
           <div className="row g-0">
             <div className="col-md-4 text-center">
@@ -99,9 +99,8 @@ export default function SellerProfile() {
           </div>
         </div>
   
-        {/* Comments Section */}
-        <div className="card shadow-sm">
-          <div className="card-header bg-primary text-white">
+          <div className="card shadow-sm">
+          <div className="card-header text-white">
             <h3 className="mb-0">Customer Reviews</h3>
           </div>
           <div className="card-body">

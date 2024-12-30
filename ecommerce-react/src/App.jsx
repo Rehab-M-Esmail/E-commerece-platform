@@ -1,4 +1,3 @@
-
 import './App.css'
 import Confirmation from './Components/Confirmation' 
 import Login from './Components/Login'
@@ -7,20 +6,34 @@ import ProductsList from './Components/ProductsList'
 import SellerProfile from './Components/SellerProfile'
 import { BrowserRouter ,Routes,Route } from 'react-router-dom'
 import ProductDetails from './Components/ProductDetails'
-function App() {
+import Signup from './components/Signup'
+import Nav from './Components/Nav'
+import UserProfile from './Components/UserProfile'
+import { Profiler } from 'react'
+import ContactUs from './components/ContactUs'
 
+function App() {
+  
   return (
-    <>
+  <>
     <BrowserRouter>
+    <Nav/>
       <Routes>
-        <Route path="/" element={<ProductsList />} />
+        <Route path="/" element={<Signup />} />
+        <Route path='/products' element={<ProductsList/>}></Route>
         <Route path="/product/:productID" element={<ProductDetails />} />
         <Route path="/login" element={<Login/>}></Route>
-        <Route path='checkout' element={<Confirmation/>}></Route>
-        <Route path='seller' element={<SellerProfile/>}></Route>
+        <Route path="/signup" element={<Signup/>}></Route>
+        <Route path='/checkout' element={<Confirmation/>}></Route>
+        <Route path='/seller' element={<SellerProfile/>}></Route>
+        <Route path='/contact' element={<ContactUs/>}></Route>
+        <Route path='/profile' element={<UserProfile/>}></Route>
+        
       </Routes>
     </BrowserRouter>
-    </>
+  </>
+    
   )
 }
+
 export default App

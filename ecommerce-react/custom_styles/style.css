@@ -1,8 +1,4 @@
 /* custom.css */
-body{
-  background-color: #f9f4ef !important;
-  color: #020826 !important;
-}
 .btn-primary {
     background-color: #8c7851 !important; 
     border-color: #8c7851 !important; 
@@ -39,7 +35,7 @@ background-color: #eaddcf !important;
 .table-borderless{
   background-color: #eaddcf !important;
 }
-.card h5,p,h1{
+.card h5,h4,p,h1{
   color: #020826 !important;
 }
 .table th, .table td {
@@ -47,3 +43,9 @@ background-color: #eaddcf !important;
   margin: 0 !important; /* Ensure there's no margin around table cells */
 }
 
+.card-header{
+  background-color: #716040 !important;
+}
+.card-text{
+  color: #716040 !important;
+}
