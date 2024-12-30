@@ -1,4 +1,4 @@
-import { ourMembersData } from "src/Data/staticData";
+import { ourMembersData } from "../../../Data/staticData";
 import MemberCard from "../../Shared/MidComponents/MemberCard/MemberCard";
 import s from "./OurMembersSection.module.scss";
 

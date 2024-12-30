@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { womenShopping } from "src/Assets/Images/Images";
+import { womenShopping } from "../../../Asset/Images/Images";
 import s from "./AboutHeroSection.module.scss";
 
 const AboutHeroSection = () => {

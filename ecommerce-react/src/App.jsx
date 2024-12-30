@@ -11,6 +11,7 @@ import UserProfile from './Components/UserProfile'
 //import { Profiler } from 'react'
 import ContactUs from './components/ContactUs'
 import Cart from './Components/Cart/Cart'
+import About from './Components/About/About'
 
 function App() {
   
@@ -29,6 +30,7 @@ function App() {
         <Route path='/contact' element={<ContactUs/>}></Route>
         <Route path='/profile' element={<UserProfile/>}></Route>
         <Route path ='/cart'   element ={<Cart/>}></Route>
+        <Route path ='/about'   element ={<About/>}></Route>
       </Routes>
     </BrowserRouter>
   </>
