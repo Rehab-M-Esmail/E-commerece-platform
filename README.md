@@ -1,6 +1,6 @@
 # My Ecommerece
 ## Description
-###### E-commerce website that offers a seamless and user-friendly shopping experience. It offers a simple, affordable way for small businesses to showcase their products online, making them accessible to customers.
+##### E-commerce website that offers a seamless and user-friendly shopping experience. It offers a simple, affordable way for small businesses to showcase their products online, making them accessible to customers.
 
 
 ## Installation
