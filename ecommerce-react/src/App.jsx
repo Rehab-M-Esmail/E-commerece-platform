@@ -15,7 +15,7 @@ import ContactUs from './components/ContactUs'
 function App() {
   
   return (
-   <>
+  <>
     <BrowserRouter>
     <Nav/>
       <Routes>

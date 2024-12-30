@@ -1,7 +1,7 @@
 
 import  { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../src/UserProfile.css'; 
+import '../../custom_styles/UserProfile.css'; 
 import { FaEdit } from 'react-icons/fa'; 
 
 const UserProfile = () => {
@@ -39,7 +39,7 @@ const UserProfile = () => {
         <div className="profile-body d-flex p-4">
           <div className="profile-avatar me-4">
             <img 
-              src="/ecommerce-react/public/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg" 
+              src="../../public/user_icon.png" 
               alt="User Avatar" 
               className="rounded-circle" 
               style={{ width: '150px', height: '150px' }} 
